@@ -25,5 +25,5 @@ This project is a simple backend for a WhatsApp chatbot, built as part of an int
 ### 1. Clone & Set up
 
 ```bash
-git clone https://github.com/Abhinaytechie/WhatsAppBot.git
-cd WhatsAppBot
+git clone https://github.com/Abhinaytechie/WhatsappBot.git
+cd WhatsappBot
