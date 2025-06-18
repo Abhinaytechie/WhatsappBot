@@ -1,0 +1,28 @@
+{
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "WHATSAPP_BUSINESS_ACCOUNT_ID",
+      "changes": [
+        {
+          "value": {
+            "contacts": [
+              {
+                "profile": { "name": "Test User" },
+                "wa_id": "919999999999"
+              }
+            ],
+            "messages": [
+              {
+                "from": "919999999999",
+                "text": { "body": "Hello" },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
