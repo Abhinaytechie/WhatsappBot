@@ -14,7 +14,7 @@ public class FireBaseInitializer {
     @PostConstruct
     public void init() {
         try {
-            FileInputStream serviceAccount = new FileInputStream("src/main/resources/whatsapp-bot-165c3-firebase-adminsdk-fbsvc-e520e4ee0e.json");
+            FileInputStream serviceAccount = new FileInputStream("src/main/resources/your-firebase.json");
 
             FirebaseOptions options = FirebaseOptions.builder()
                     .setCredentials(GoogleCredentials.fromStream(serviceAccount))
@@ -23,10 +23,10 @@ public class FireBaseInitializer {
 
             if (FirebaseApp.getApps().isEmpty()) {
                 FirebaseApp.initializeApp(options);
-                System.out.println("✅ Firebase initialized.");
+                System.out.println("Firebase initialized.");
             }
         } catch (Exception e) {
-            System.err.println("❌ Firebase init error: " + e.getMessage());
+            System.err.println("Firebase init error: " + e.getMessage());
         }
     }
 }
